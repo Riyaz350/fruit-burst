@@ -4,8 +4,422 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-</head>
-<body>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'nav-color': '#F85559',
+                
+              }
+            }
+          }
+        }
+      </script>
+    <style> 
+        .lato{
+          font-family: 'Lato', sans-serif;
+        }
+    </style>
+    
+</head>
+<body class="lato">
+    <header class="container mx-auto  ">
+
+      <!-- navbar section -->
+        <nav class="" >
+            <div class="px-10 py-8 navbar bg-base-100 lg:bg-nav-color mt-12 rounded-full">
+                <div class="navbar-start ">
+                  <div class="flex justify-between md:flex-row-reverse md:gap-10">
+                  <div class="lg:hidden ">
+                    <div class="lg:invisible flex items-center ">
+                      <img src="images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl font-extrabold md:text-black lg:text-white text-left">Fruit Burst</a>
+                    </div>
+                  </div>
+                  <div class="dropdown flex items-center lg:hidden ">
+                    <div class="">
+                      <label tabindex="0" class="btn btn-ghost lg:hidden pl-52 md:p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:flex md:justify-end" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  </div>
+
+
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                      <li><a>Home</a></li>
+                      <li tabindex="0"><a href="">About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  </div>
+
+                  <div class="hidden lg:flex ">
+                    <img src="images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case text-4xl font-extrabold md:text-black lg:text-white text-left">Fruit Burst</a>
+                  </div>
+                
+                  <div class="navbar-end hidden lg:flex md:flex">
+                      <div class="  bg-white rounded-full flex justify-between items-center px-6 w-[400px] h-[50px]">
+                          <input type="text" placeholder="Search here" class="input md:w-auto flex-1" />
+                          <a href=""><i class="fa fa-light fa-magnifying-glass fa-lg flex-1"></i></a>
+                        </div>
+                  </div>
+
+              </div>
+        </nav>
+
+      <!-- banner section -->
+        <div>
+          <div class="carousel  lg:w-full rounded-xl mt-14 ">
+            <div id="slide1" class="carousel-item relative w-full   ">
+              <img src="/images//banner1.png" class="w-full absolute " />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                <a href="#slide4" class="btn btn-circle bg-black border-0">❮</a> 
+                <div class=" text-white text-center lg:space-y-6">
+                  <h1 class="lg:text-7xl md:text-2xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
+                  <p>We supply highly quality organic products</p>
+                  <button class="btn bg-nav-color border-0 text-white">Shop Now</button>
+                </div>
+                <a href="#slide2" class="btn btn-circle bg-black border-0">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images//banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-black border-0">❮</a> 
+
+                <a href="#slide3" class="btn btn-circle  bg-black border-0">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images//banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle  bg-black border-0">❮</a> 
+                <a href="#slide4" class="btn btn-circle  bg-black border-0">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images//banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle  bg-black border-0">❮</a> 
+                <a href="#slide1" class="btn btn-circle  bg-black border-0">❯</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-around drop-shadow-lg bg-white relative lg:w-[1196px] rounded-lg px-16 py-12 text-center mx-auto -mt-28 hidden lg:flex">
+            <div class="space-y-4">
+              <img src="images/fruit1.png" alt="">
+              <p>Grape</p>
+            </div>
+            <div class="space-y-4">
+              <img src="images/fruit2.png" alt="">
+              <p>Orange</p>
+            </div>
+            <div class="space-y-4">
+              <img src="images/fruit3.png" alt="">
+              <p>Mango</p>
+            </div>
+            <div class="space-y-4">
+              <img src="images/fruit4.png" alt="">
+              <p>Strawberry</p>
+            </div>
+            <div class="space-y-4">
+              <img src="images/fruit5.png" alt="">
+              <p>Pomagranate</p>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+
+      <!-- deal of the day section -->
+
+      <div>
+        <div class="lg:flex text-center justify-between items-center mt-36 space-y-6">
+
+          <div class="space-y-6">
+            <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+            <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+    
+          <div class="flex md:justify-center ">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
+              <div class="flex flex-col">
+                <div class="flex items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  <i class="fa-solid fa-ellipsis-vertical fa-sm"></i>
+                </div>
+                
+                days
+              </div> 
+              <div class="flex flex-col">
+                <div class="flex items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  <i class="fa-solid fa-ellipsis-vertical fa-sm"></i>
+                </div>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <div class="flex items-center gap-4">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  <i class="fa-solid fa-ellipsis-vertical fa-sm"></i>
+                </div>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:32;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card section -->
+
+        <div class="mt-12 mx-5 flex flex-col lg:flex-row gap-6">
+          <div class="card w-full bg-base-100 shadow-xl p-12 space-y-4 ">
+            <figure class="px-10 pt-10">
+              <img src="/images//fruit6.png" alt="Apple" class="rounded-xl" />
+              
+            </figure>
+              <div class="text-center">
+                <h2 class="font-bold text-2xl border-b-2 border-l-neutral-300 py-6">12.90$ - 18.85$</h2>
+              </div>
+            <div class="card-body items-center text-center space-y-4">
+              <p>Apple</p>
+
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+
+              <!-- modal start -->
+              <div class="card-actions">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn bg-white hover:bg-white border-0" onclick="my_modal_5.showModal()">Details</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    
+                    <div class="flex flex-col justify-center items-center px-32 py-12 space-y-6">
+                      <img src="images/fruit6.png" alt="">
+                    <h3 class="font-extrabold text-4xl">Apples</h3>
+                    <p class="text-base font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action flex flex-row justify-center items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-white border-nav-color text-nav-color">Close</button>
+                      <button class="btn bg-nav-color text-white">Buy Now</button>
+                    </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+              
+
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 shadow-xl p-12 space-y-4">
+            <figure class="px-10 pt-10">
+              <img src="/images//fruit7.png" alt="Orange" class="rounded-xl" />
+              
+            </figure>
+              <div class="text-center">
+                <h2 class="font-bold text-2xl border-b-2 border-l-neutral-300 py-6">12.90$ - 18.85$</h2>
+              </div>
+            <div class="card-body items-center text-center space-y-4">
+              <p>Orange</p>
+
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+
+              <!-- modal start -->
+              <div class="card-actions">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn bg-white hover:bg-white border-0" onclick="my_modal_7.showModal()">Details</button>
+                <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    
+                    <div class="flex flex-col justify-center items-center px-32 py-12 space-y-6">
+                      <img src="images/fruit7.png" alt="">
+                    <h3 class="font-extrabold text-4xl">Orange</h3>
+                    <p class="text-base font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action flex flex-row justify-center items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-white border-nav-color text-nav-color">Close</button>
+                      <button class="btn bg-nav-color text-white">Buy Now</button>
+                    </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+              
+
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 shadow-xl p-12 space-y-4">
+            <figure class="px-10 pt-10">
+              <img src="/images//fruit8.png" alt="Dragon Fruit" class="rounded-xl" />
+              
+            </figure>
+              <div class="text-center">
+                <h2 class="font-bold text-2xl border-b-2 border-l-neutral-300 py-6">12.90$ - 18.85$</h2>
+              </div>
+            <div class="card-body items-center text-center space-y-4">
+              <p>Dragon Fruit</p>
+
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+
+              <!-- modal start -->
+              <div class="card-actions">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn bg-white hover:bg-white border-0" onclick="my_modal_8.showModal()">Details</button>
+                <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    
+                    <div class="flex flex-col justify-center items-center px-32 py-12 space-y-6">
+                      <img src="images/fruit8.png" alt="">
+                    <h3 class="font-extrabold text-4xl">Dragon Fruit</h3>
+                    <p class="text-base font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action flex flex-row justify-center items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-white border-nav-color text-nav-color">Close</button>
+                      <button class="btn bg-nav-color text-white">Buy Now</button>
+                    </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+              
+
+            </div>
+          </div>
+          <div class="card w-full bg-base-100 shadow-xl p-12 space-y-4">
+            <figure class="px-10 pt-10">
+              <img src="/images//fruit9.png" alt="Banana" class="rounded-xl" />
+              
+            </figure>
+              <div class="text-center">
+                <h2 class="font-bold text-2xl border-b-2 border-l-neutral-300 py-6">12.90$ - 18.85$</h2>
+              </div>
+            <div class="card-body items-center text-center space-y-4">
+              <p>Banana</p>
+
+              <!-- rating -->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+
+              <!-- modal start -->
+              <div class="card-actions">
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn bg-white hover:bg-white border-0" onclick="my_modal_9.showModal()">Details</button>
+                <dialog id="my_modal_9" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    
+                    <div class="flex flex-col justify-center items-center px-32 py-12 space-y-6">
+                      <img src="images/fruit9.png" alt="">
+                    <h3 class="font-extrabold text-4xl">Banana</h3>
+                    <p class="text-base font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action flex flex-row justify-center items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-white border-nav-color text-nav-color">Close</button>
+                      <button class="btn bg-nav-color text-white">Buy Now</button>
+                    </div>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+              
+
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </main>
 </body>
 </html>
