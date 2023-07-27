@@ -42,7 +42,10 @@
 
       <!-- navbar section -->
         <nav class="" >
+          
             <div class="px-10 py-8 navbar bg-base-100 lg:bg-nav-color mt-12 rounded-full">
+
+
                 <div class="navbar-start ">
                   <div class="flex justify-between md:flex-row-reverse md:gap-10">
                   <div class="lg:hidden ">
@@ -51,6 +54,8 @@
                     <a class="btn btn-ghost normal-case text-4xl font-extrabold md:text-black lg:text-white text-left">Fruit Burst</a>
                     </div>
                   </div>
+
+
                   <div class="dropdown flex items-center lg:hidden ">
                     <div class="">
                       <label tabindex="0" class="btn btn-ghost lg:hidden pl-52 md:p-0">
@@ -65,6 +70,8 @@
                     </div>
 
                   </div>
+
+
                   </div>
 
 
@@ -99,35 +106,40 @@
             <div id="slide1" class="carousel-item relative w-full   ">
               <img src="images//banner1.png" class="w-full absolute " />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
-                <a href="#slide4" class="btn btn-circle bg-black border-0">❮</a> 
-                <div class=" text-white text-center lg:space-y-6">
-                  <h1 class="lg:text-7xl md:text-2xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
-                  <p>We supply highly quality organic products</p>
+                <a href="#slide4" class="btn btn-circle bg-black border-0 text-white ">❮</a> 
+
+                <!-- text section of banner -->
+
+                <div class=" text-white text-center lg:space-y-6 space-y-4">
+                  <h1 class="lg:text-7xl text-2xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
+                  <p class="lg:text-base text-sm">We supply highly quality organic products</p>
                   <button class="btn bg-nav-color border-0 text-white">Shop Now</button>
                 </div>
-                <a href="#slide2" class="btn btn-circle bg-black border-0">❯</a>
+
+
+                <a href="#slide2" class="btn btn-circle bg-black border-0 text-white">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
               <img src="images//banner2.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle bg-black border-0">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black border-0 text-white">❮</a> 
 
-                <a href="#slide3" class="btn btn-circle  bg-black border-0">❯</a>
+                <a href="#slide3" class="btn btn-circle  bg-black border-0 text-white">❯</a>
               </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
               <img src="images//banner3.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle  bg-black border-0">❮</a> 
-                <a href="#slide4" class="btn btn-circle  bg-black border-0">❯</a>
+                <a href="#slide2" class="btn btn-circle  bg-black border-0 text-white">❮</a> 
+                <a href="#slide4" class="btn btn-circle  bg-black border-0 text-white">❯</a>
               </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
               <img src="images//banner4.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle  bg-black border-0">❮</a> 
-                <a href="#slide1" class="btn btn-circle  bg-black border-0">❯</a>
+                <a href="#slide3" class="btn btn-circle  bg-black border-0 text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle  bg-black border-0 text-white">❯</a>
               </div>
             </div>
           </div>
@@ -161,16 +173,19 @@
       <!-- deal of the day section -->
 
       <div>
-        <div class="lg:flex text-center justify-between items-center mt-36 space-y-6">
+        <div class="lg:flex text-center justify-between items-center mt-6 lg:mt-36 space-y-6">
 
-          <div class="space-y-6">
+          <div class="space-y-6 lg:text-left">
             <h2 class="text-5xl font-extrabold">Deal of the day</h2>
             <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
-    
-          <div class="flex md:justify-center ">
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
-              <div class="flex flex-col">
+          
+          <!-- timer section -->
+
+
+          <div class=" w-[400px] lg:mx-0 px-0 mx-auto ">
+            <div class="grid grid-flow-col gap-5 text-center grid-cols-4  lg:auto-cols-max ">
+              <div class="flex flex-col pl-6">
                 <div class="flex items-center gap-4">
                   <span class="countdown font-mono text-5xl">
                     <span style="--value:15;"></span>
@@ -180,7 +195,7 @@
                 
                 days
               </div> 
-              <div class="flex flex-col">
+              <div class="flex flex-col pl-6">
                 <div class="flex items-center gap-4">
                   <span class="countdown font-mono text-5xl">
                     <span style="--value:10;"></span>
@@ -189,7 +204,7 @@
                 </div>
                 hours
               </div> 
-              <div class="flex flex-col">
+              <div class="flex flex-col pl-6">
                 <div class="flex items-center gap-4">
                   <span class="countdown font-mono text-5xl">
                     <span style="--value:24;"></span>
@@ -198,7 +213,7 @@
                 </div>
                 min
               </div> 
-              <div class="flex flex-col">
+              <div class="flex flex-col pl-6">
                 <span class="countdown font-mono text-5xl">
                   <span style="--value:32;"></span>
                 </span>
@@ -211,7 +226,7 @@
 
         <!-- card section -->
 
-        <div class="mt-12 mx-5 flex flex-col lg:flex-row gap-6">
+        <div class="lg:mt-12 mx-5 flex flex-col lg:flex-row gap-6">
           <div class="card w-full bg-base-100 shadow-xl p-12 space-y-4 ">
             <figure class="px-10 pt-10">
               <img src="images//fruit6.png" alt="Apple" class="rounded-xl" />
@@ -425,7 +440,7 @@
       <!-- my team section -->
 
       <div>
-        <div class="hero min-h-screen " style="background-image: url(images/banner1.png  );">
+        <div class="hero min-h-screen " style="background-image: url(images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
             <div class="">
@@ -443,9 +458,9 @@
                   <!-- social links -->
                   <div class="">
                     <ul class="flex gap-3">
-                      <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-                      <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-                      <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+                      <li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -458,9 +473,9 @@
                   <!-- social links -->
                   <div class="">
                     <ul class="flex gap-3">
-                      <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-                      <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-                      <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+                      <li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -473,9 +488,9 @@
                   <!-- social links -->
                   <div class="">
                     <ul class="flex gap-3">
-                      <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-                      <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-                      <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+                      <li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -488,9 +503,9 @@
                   <!-- social links -->
                   <div class="">
                     <ul class="flex gap-3">
-                      <li><i class="fa-brands fa-facebook fa-lg"></i></li>
-                      <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-                      <li><i class="fa-brands fa-linkedin fa-lg"></i></li>
+                      <li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                      <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -629,7 +644,7 @@
 
     <div>
       <div class="grid grid-flow-col gap-4 lg:mb-36">
-        <ul class="flex flex-wrap gap-10">
+        <ul class="flex  gap-10">
           <li><a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a></li>
           <li><a href=""><i class="fa-brands fa-facebook-f fa-2xl" style="color: #fafcff;"></i></a></li>
           <li><a href=""><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a></li>
